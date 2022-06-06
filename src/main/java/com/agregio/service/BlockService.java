@@ -1,5 +1,6 @@
 package com.agregio.service;
 
+import com.agregio.model.Block;
 import com.agregio.model.BlockInfo;
 import com.agregio.repository.BlockRepository;
 import lombok.AllArgsConstructor;
@@ -25,6 +26,10 @@ public class BlockService {
         List<Long> blocks = repository.getBlocks(offerId);
         LOGGER.debug("Searching information for all the blocks with offerId {}", offerId);
         return repository.getBlockInfo(blocks);
+    }
+
+    public List<Block> getFreeBlocks() {
+        return repository.getFreeBlocks();
     }
 
 }
