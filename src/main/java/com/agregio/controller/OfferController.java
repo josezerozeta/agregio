@@ -18,7 +18,7 @@ public class OfferController {
     private final OfferService service;
 
     @GetMapping("/findAllOffers")
-    public List<Offer> findAll() {
+    public List<Offer> findAllOffers() {
         return service.findAll();
     }
 

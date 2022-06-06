@@ -9,5 +9,6 @@ import lombok.NoArgsConstructor;
 public class OfferRequest {
 
     private Double limitPrice;
+    private Double energy;
 
 }
